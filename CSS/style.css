@@ -1,0 +1,125 @@
+@import url(reset.css);
+
+body{
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+.container header{
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    background-color: rgb(51, 192, 192);
+    justify-self: center;
+    margin-top: 10px;
+
+    height: 100px;
+    width: 60%;
+}
+header h1{
+   
+    justify-self: center;
+
+}
+nav ul li a{
+    text-decoration: none;
+}
+header nav ul {
+     color: #000;
+    list-style: none; 
+    margin: 1rem 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container main{
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    background-color: aquamarine;
+    margin-bottom: 350px;
+     margin-top: 10px;
+    justify-self: center;
+    min-height: 100vh;
+    width: 80%;
+    
+}
+main .imagem-principal{
+    background-color: bisque;
+    margin-top: 20px ;
+    height: 300px;
+
+
+}
+.imagem-principal img{
+     border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+main .titulo{
+    justify-items: center;
+
+}
+main .destaques{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    height: 1000px;
+    
+}
+.destaques .produto1{
+    flex-wrap: wrap;
+    background-color: #000;
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.destaques .produto2{
+    background-color: #000;
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+     margin-top: 50px;
+}
+.destaques .produto3{
+    background-color: #000;
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+     margin-top: 50px;
+}
+.produto1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.produto2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.produto3 img{
+    height: 100%;
+    width: 100%;
+}
+.conteudo1{
+   padding: 20px;
+
+    background-color: antiquewhite;
+}
